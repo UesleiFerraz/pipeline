@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simulador5Fases", "Simulador5Fases\Simulador5Fases.csproj", "{C2567AFD-21F7-40D2-A424-EC33CB4D1EB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2567AFD-21F7-40D2-A424-EC33CB4D1EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2567AFD-21F7-40D2-A424-EC33CB4D1EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2567AFD-21F7-40D2-A424-EC33CB4D1EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2567AFD-21F7-40D2-A424-EC33CB4D1EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDCC41CF-2246-4D03-9E61-510C28C12ABB}
+	EndGlobalSection
+EndGlobal
