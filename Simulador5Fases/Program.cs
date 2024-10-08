@@ -1,6 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 public class Program {
   private Dictionary<string, int> bancoRegistradores = new Dictionary<string, int>();
+  private Instrucao? instrucaoBusca;
+  private Instrucao? instrucaoDecodificacao;
+  private Instrucao? instrucaoExecucao;
+  private Instrucao? instrucaoMemoria;
+  private Instrucao? instrucaoEscrita;
   private int[] memoria = new int[10];
   private Instrucao[] instrucoes;
   private int pc { get; set; } = 0;
