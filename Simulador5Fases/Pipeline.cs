@@ -60,10 +60,10 @@ public class Pipeline {
     switch (instrucao.Opcode)
     {
       case Opcode.ADD:
-        instrucao.Temp1 = instrucao.DecodeOper2 + instrucao.DecodeOper2;
+        instrucao.Temp1 = instrucao.DecodeOper2 + instrucao.DecodeOper3;
         break;
       case Opcode.SUB:
-        instrucao.Temp1 = instrucao.DecodeOper2 - instrucao.DecodeOper2;
+        instrucao.Temp1 = instrucao.DecodeOper2 - instrucao.DecodeOper3;
         break;
       case Opcode.BEQ:
         if(instrucao.DecodeOper1 != instrucao.DecodeOper2){
@@ -92,7 +92,6 @@ public class Pipeline {
       return;
     }
     instrucaoBusca = this.instrucoes[this.pc];
-    pc++;
   }
 
   public int getValorRegistrador(string index) {
@@ -107,12 +106,13 @@ public class Pipeline {
     LeituraArquivo la = new LeituraArquivo();
     this.instrucoes = la.lerCase(true);
 
-    for (int i = 0; i <= instrucoes.Count; i++){
+    for (int i = 0; i < instrucoes.Count + 5; i++){
       this.writeBack();
       this.memoriaAccess();
       this.execute();
       this.decode();
       this.instructionFetch();
+      this.pc++;
     }
 
     foreach (KeyValuePair<string, int> item in bancoRegistradores)

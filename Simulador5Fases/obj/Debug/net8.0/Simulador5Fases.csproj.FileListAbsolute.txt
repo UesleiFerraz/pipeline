@@ -1,15 +1,30 @@
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\Simulador5Fases.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\Simulador5Fases.AssemblyInfoInputs.cache
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\Simulador5Fases.AssemblyInfo.cs
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\Simulador5Fases.csproj.CoreCompileInputs.cache
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\Simulador5Fases.sourcelink.json
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\bin\Debug\net8.0\Simulador5Fases.exe
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\bin\Debug\net8.0\Simulador5Fases.deps.json
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\bin\Debug\net8.0\Simulador5Fases.runtimeconfig.json
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\bin\Debug\net8.0\Simulador5Fases.dll
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\bin\Debug\net8.0\Simulador5Fases.pdb
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\Simulador5Fases.dll
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\refint\Simulador5Fases.dll
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\Simulador5Fases.pdb
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\Simulador5Fases.genruntimeconfig.cache
-C:\Users\ottos\Documents\github\trabueslei\pipeline\Simulador5Fases\obj\Debug\net8.0\ref\Simulador5Fases.dll
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.AssemblyInfoInputs.cache
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.AssemblyInfo.cs
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.csproj.CoreCompileInputs.cache
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.sourcelink.json
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.exe
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.deps.json
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.runtimeconfig.json
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.dll
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.pdb
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.dll
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/refint/Simulador5Fases.dll
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.pdb
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.genruntimeconfig.cache
+C:/Users/ottos/Documents/github/trabueslei/pipeline/Simulador5Fases/obj/Debug/net8.0/ref/Simulador5Fases.dll
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.deps.json
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.runtimeconfig.json
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.dll
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.pdb
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.GeneratedMSBuildEditorConfig.editorconfig
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.AssemblyInfoInputs.cache
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.AssemblyInfo.cs
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.csproj.CoreCompileInputs.cache
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.sourcelink.json
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.dll
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/refint/Simulador5Fases.dll
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.pdb
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/Simulador5Fases.genruntimeconfig.cache
+/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/Debug/net8.0/ref/Simulador5Fases.dll

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Simulador5Fases")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+668d30153a519b0680949653c90433f5e72e7649")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfd73dd5e2232084dee47f8dbd1f8fd986c7d885")]
 [assembly: System.Reflection.AssemblyProductAttribute("Simulador5Fases")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Simulador5Fases")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

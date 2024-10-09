@@ -8,26 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ottos\\.nuget\\packages\\": {}
+    "/Users/uesleiferraz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ottos\\Documents\\github\\trabueslei\\pipeline\\Simulador5Fases\\Simulador5Fases.csproj",
+      "projectUniqueName": "/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/Simulador5Fases.csproj",
       "projectName": "Simulador5Fases",
-      "projectPath": "C:\\Users\\ottos\\Documents\\github\\trabueslei\\pipeline\\Simulador5Fases\\Simulador5Fases.csproj",
-      "packagesPath": "C:\\Users\\ottos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ottos\\Documents\\github\\trabueslei\\pipeline\\Simulador5Fases\\obj\\",
+      "projectPath": "/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/Simulador5Fases.csproj",
+      "packagesPath": "/Users/uesleiferraz/.nuget/packages/",
+      "outputPath": "/Users/uesleiferraz/development/pessoal/unisinos/arquitetura e organizacao de software/Simulador5Fases/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ottos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/uesleiferraz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -66,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

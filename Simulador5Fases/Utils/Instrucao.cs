@@ -35,6 +35,21 @@ public class Instrucao
     this.Valida = valida;
   }
 
+  public Instrucao(Opcode opcode, string oper1, string oper2, string oper3, int decodeOper1, int decodeOper2, int decodeOper3, int temp1, int temp2, int temp3, bool valida)
+  {
+    this.Opcode = opcode;
+    this.Oper1 = oper1;
+    this.Oper2 = oper2;
+    this.Oper3 = oper3;
+    this.DecodeOper1 = decodeOper1;
+    this.DecodeOper2 = decodeOper2;
+    this.DecodeOper3 = decodeOper3;
+    this.Temp1 = temp1;
+    this.Temp2 = temp2;
+    this.Temp3 = temp3;
+    this.Valida = valida;
+  }
+
   public Instrucao(Opcode opcode, string oper1, string oper2, string oper3)
   {
     this.Opcode = opcode;
@@ -49,6 +64,6 @@ public class Instrucao
   }
 
   public Instrucao Clonar() {
-    return new Instrucao(this.Opcode, this.Oper1, this.Oper2, this.Oper3, this.Temp1, this.Temp2, this.Temp3, this.Valida);
+    return new Instrucao(this.Opcode, this.Oper1, this.Oper2, this.Oper3, this.DecodeOper1, this.DecodeOper2, this.DecodeOper3, this.Temp1, this.Temp2, this.Temp3, this.Valida);
   }
 }
