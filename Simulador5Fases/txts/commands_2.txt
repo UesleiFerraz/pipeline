@@ -1,0 +1,10 @@
+lw R0 R1 R2
+lw R0 R2 R3
+lw R0 R3 R4
+noop
+add R2 R1 R2
+noop
+noop
+beq R2 R0 R3
+beq R0 R0 R3
+halt

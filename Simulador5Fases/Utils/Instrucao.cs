@@ -15,6 +15,9 @@ public class Instrucao
   public string Oper1 { get; set; }
   public string Oper2 { get; set; }
   public string Oper3 { get; set; }
+  public int DecodeOper1 { get; set; }
+  public int DecodeOper2 { get; set; }
+  public int DecodeOper3 { get; set; }
   public int Temp1 { get; set; }
   public int Temp2 { get; set; }
   public int Temp3 { get; set; }
@@ -30,5 +33,22 @@ public class Instrucao
     this.Temp2 = temp2;
     this.Temp3 = temp3;
     this.Valida = valida;
+  }
+
+  public Instrucao(Opcode opcode, string oper1, string oper2, string oper3)
+  {
+    this.Opcode = opcode;
+    this.Oper1 = oper1;
+    this.Oper2 = oper2;
+    this.Oper3 = oper3;
+  }
+
+    public Instrucao(Opcode opcode)
+  {
+    this.Opcode = opcode;
+  }
+
+  public Instrucao Clonar() {
+    return new Instrucao(this.Opcode, this.Oper1, this.Oper2, this.Oper3, this.Temp1, this.Temp2, this.Temp3, this.Valida);
   }
 }
