@@ -17,7 +17,10 @@ public class Pipeline {
   public void writeBack() {
     instrucaoWriteBack = instrucaoMemoria?.Clonar();
     Instrucao instrucao = instrucaoWriteBack;
-    if (instrucao == null) {
+    if (instrucao is null) {
+      return;
+    }
+    if (!instrucao.Valida) {
       return;
     }
     switch (instrucao.Opcode)
@@ -34,7 +37,10 @@ public class Pipeline {
   public void memoriaAccess() {
     instrucaoMemoria = instrucaoExecuta?.Clonar();
     Instrucao instrucao = instrucaoMemoria;
-    if (instrucao == null) {
+    if (instrucao is null) {
+      return;
+    }
+    if (!instrucao.Valida) {
       return;
     }
     switch (instrucao.Opcode)
@@ -66,8 +72,10 @@ public class Pipeline {
         instrucao.Temp1 = instrucao.DecodeOper2 - instrucao.DecodeOper3;
         break;
       case Opcode.BEQ:
-        if(instrucao.DecodeOper1 != instrucao.DecodeOper2){
+        if(instrucao.DecodeOper1 == instrucao.DecodeOper2){
           pc += instrucao.DecodeOper3;
+          this.instrucaoBusca.Valida = false;
+          this.instrucaoDecodifica.Valida = false;
         }
         break;
       default:
@@ -78,7 +86,7 @@ public class Pipeline {
   public void decode() {
     this.instrucaoDecodifica = instrucaoBusca?.Clonar();
     Instrucao instrucao = this.instrucaoDecodifica;
-    if (instrucao == null) {
+    if (instrucao == null || instrucao.Opcode == Opcode.NOOP) {
       return;
     }
     instrucao.DecodeOper1 = getValorRegistrador(instrucao.Oper1);
@@ -106,7 +114,7 @@ public class Pipeline {
     LeituraArquivo la = new LeituraArquivo();
     this.instrucoes = la.lerCase(true);
 
-    for (int i = 0; i < instrucoes.Count + 5; i++){
+    for (int i = 0; pc < instrucoes.Count + 5; i++){
       this.writeBack();
       this.memoriaAccess();
       this.execute();
@@ -115,9 +123,9 @@ public class Pipeline {
       this.pc++;
     }
 
-    foreach (KeyValuePair<string, int> item in bancoRegistradores)
-    {
-        Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-    }
+    // foreach (KeyValuePair<string, int> item in bancoRegistradores)
+    // {
+    //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+    // }
   }
 }

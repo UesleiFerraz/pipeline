@@ -21,9 +21,9 @@ public class Instrucao
   public int Temp1 { get; set; }
   public int Temp2 { get; set; }
   public int Temp3 { get; set; }
-  public bool Valida { get; set; }
+  public bool Valida { get; set; } = true;
 
-  public Instrucao(Opcode opcode, string oper1, string oper2, string oper3, int temp1, int temp2, int temp3, bool valida)
+  public Instrucao(Opcode opcode, string oper1, string oper2, string oper3, int temp1, int temp2, int temp3, bool valida = true)
   {
     this.Opcode = opcode;
     this.Oper1 = oper1;
@@ -35,7 +35,7 @@ public class Instrucao
     this.Valida = valida;
   }
 
-  public Instrucao(Opcode opcode, string oper1, string oper2, string oper3, int decodeOper1, int decodeOper2, int decodeOper3, int temp1, int temp2, int temp3, bool valida)
+  public Instrucao(Opcode opcode, string oper1, string oper2, string oper3, int decodeOper1, int decodeOper2, int decodeOper3, int temp1, int temp2, int temp3, bool valida = true)
   {
     this.Opcode = opcode;
     this.Oper1 = oper1;

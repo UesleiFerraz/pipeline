@@ -1,1 +1,12 @@
-add R0 R1 R2
+noop
+add R10 R11 R10
+noop
+noop
+beq R10 R0 R6
+noop
+noop
+noop
+beq R0 R0 R7
+noop
+noop
+noop
