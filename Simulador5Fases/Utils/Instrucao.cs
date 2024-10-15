@@ -11,6 +11,7 @@ public enum Opcode
 
 public class Instrucao
 {
+  public int Id { get; set; }
   public Opcode Opcode { get; set; }
   public string Oper1 { get; set; }
   public string Oper2 { get; set; }
@@ -35,8 +36,9 @@ public class Instrucao
     this.Valida = valida;
   }
 
-  public Instrucao(Opcode opcode, string oper1, string oper2, string oper3, int decodeOper1, int decodeOper2, int decodeOper3, int temp1, int temp2, int temp3, bool valida = true)
+  public Instrucao(int id, Opcode opcode, string oper1, string oper2, string oper3, int decodeOper1, int decodeOper2, int decodeOper3, int temp1, int temp2, int temp3, bool valida = true)
   {
+    this.Id = id;
     this.Opcode = opcode;
     this.Oper1 = oper1;
     this.Oper2 = oper2;
@@ -50,20 +52,22 @@ public class Instrucao
     this.Valida = valida;
   }
 
-  public Instrucao(Opcode opcode, string oper1, string oper2, string oper3)
+  public Instrucao(int id, Opcode opcode, string oper1, string oper2, string oper3)
   {
+    this.Id = id;
     this.Opcode = opcode;
     this.Oper1 = oper1;
     this.Oper2 = oper2;
     this.Oper3 = oper3;
   }
 
-    public Instrucao(Opcode opcode)
+  public Instrucao(int id, Opcode opcode)
   {
+    this.Id = id;
     this.Opcode = opcode;
   }
 
   public Instrucao Clonar() {
-    return new Instrucao(this.Opcode, this.Oper1, this.Oper2, this.Oper3, this.DecodeOper1, this.DecodeOper2, this.DecodeOper3, this.Temp1, this.Temp2, this.Temp3, this.Valida);
+    return new Instrucao(this.Id, this.Opcode, this.Oper1, this.Oper2, this.Oper3, this.DecodeOper1, this.DecodeOper2, this.DecodeOper3, this.Temp1, this.Temp2, this.Temp3, this.Valida);
   }
 }

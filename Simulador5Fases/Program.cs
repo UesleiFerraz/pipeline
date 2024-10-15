@@ -13,7 +13,9 @@ for (int i = 0; i <= 32; i++) {
   bancoRegistradores[$"R{i}"] = i;
 }
 
-Pipeline pipeline = new Pipeline(bancoRegistradores);
+Console.WriteLine("Voce quer habilitar a predicao de salto? (s/n)");
+string predicao = Console.ReadLine();
+bool predicaoSalto = predicao == "s" ? true : false;
+Pipeline pipeline = new Pipeline(bancoRegistradores, predicaoSalto);
 
 pipeline.Main();
-Console.WriteLine("teste");

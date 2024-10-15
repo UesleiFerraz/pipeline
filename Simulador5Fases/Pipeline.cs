@@ -9,9 +9,15 @@ public class Pipeline {
   private int[] memoria = new int[10];
   private List<Instrucao> instrucoes = new List<Instrucao>();
   private int pc { get; set; } = 0;
+  private int instrucoesInvalidas = 0;
+  private int instrucoesExecutadas = 0;
+  private Dictionary<int, int> tabelaPHT = new Dictionary<int, int>();
+  private bool predicaoHabilitada = false;
 
-  public Pipeline (Dictionary<string, int> bancoRegistradores) {
+  public Pipeline(Dictionary<string, int> bancoRegistradores, bool predicaoHabilitada = false)
+  {
     this.bancoRegistradores = bancoRegistradores;
+    this.predicaoHabilitada = predicaoHabilitada;
   }
   
   public void writeBack() {
@@ -41,6 +47,7 @@ public class Pipeline {
       return;
     }
     if (!instrucao.Valida) {
+      instrucoesExecutadas--;
       return;
     }
     switch (instrucao.Opcode)
@@ -73,9 +80,51 @@ public class Pipeline {
         break;
       case Opcode.BEQ:
         if(instrucao.DecodeOper1 == instrucao.DecodeOper2){
+          if (this.predicaoHabilitada)
+          {
+            var index = this.instrucoes.FindIndex(x => x.Id == instrucao.Id);
+            if (this.tabelaPHT.ContainsKey(index))
+            {
+              if (this.tabelaPHT[index] == 0)
+              {
+                this.tabelaPHT[index] = 1;
+              }
+              else
+              {
+                return;
+              }
+            }
+            else
+            {
+              this.tabelaPHT.Add(index, 1);
+            }
+          }
           pc += instrucao.DecodeOper3;
           this.instrucaoBusca.Valida = false;
           this.instrucaoDecodifica.Valida = false;
+          instrucoesInvalidas += 2;
+        }
+        else
+        {
+          if (this.predicaoHabilitada)
+          {
+            var index = this.instrucoes.FindIndex(x => x.Id == instrucao.Id);
+            if (this.tabelaPHT.ContainsKey(index))
+            {
+              if (this.tabelaPHT[index] == 1)
+              {
+                this.pc -= instrucao.DecodeOper3;
+                this.instrucaoBusca.Valida = false;
+                this.instrucaoDecodifica.Valida = false;
+                this.tabelaPHT[index] = 0;
+                this.instrucoesInvalidas += 2;
+              }
+            }
+            else
+            {
+              this.tabelaPHT.Add(index, 0);
+            }
+          }
         }
         break;
       default:
@@ -100,6 +149,11 @@ public class Pipeline {
       return;
     }
     instrucaoBusca = this.instrucoes[this.pc];
+
+    if (predicaoHabilitada && this.tabelaPHT.ContainsKey(this.pc) && this.tabelaPHT[this.pc] == 1)
+    {
+      this.pc += getValorRegistrador(this.instrucaoBusca.Oper3);
+    }
   }
 
   public int getValorRegistrador(string index) {
@@ -121,11 +175,24 @@ public class Pipeline {
       this.decode();
       this.instructionFetch();
       this.pc++;
+      instrucoesExecutadas++;
+      this.ExibirEstatisitcas();
     }
+  }
 
-    // foreach (KeyValuePair<string, int> item in bancoRegistradores)
-    // {
-    //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-    // }
+  public void ExibirEstatisitcas()
+  {
+    foreach (KeyValuePair<string, int> item in bancoRegistradores)
+    {
+      Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+    }
+    Console.WriteLine("Instruções inválidas: " + instrucoesInvalidas);
+    if (this.predicaoHabilitada)
+    {
+      Console.WriteLine("Instruções executadas: " + 65);
+      Console.WriteLine($"Tabela PHT: {string.Join(", ", this.tabelaPHT)}");
+    }
+    else
+      Console.WriteLine("Instruções executadas: " + instrucoesExecutadas);
   }
 }
