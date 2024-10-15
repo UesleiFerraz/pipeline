@@ -1,7 +1,10 @@
-Integrantes
+# Integrantes
  - Ueslei Ferraz
  - Otto Schimtz
  - Caua Festa
  - João Pedro Salles
 
-- Para rodar o projeto execute o arquivo n: Simulador5Fases/bin/Debug/net8.0/Simulador5Fases.exe
+## Para rodar o projeto Baixe o sdk do dotnet no site da microsoft
+- Abra o terminal e digite cd Simulador5Fases
+- Digite dotnet build
+- Digite dotnet run
