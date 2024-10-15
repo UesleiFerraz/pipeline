@@ -19,3 +19,5 @@ bool predicaoSalto = predicao == "s" ? true : false;
 Pipeline pipeline = new Pipeline(bancoRegistradores, predicaoSalto);
 
 pipeline.Main();
+
+Console.ReadLine();
